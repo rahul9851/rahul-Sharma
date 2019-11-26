@@ -1,0 +1,52 @@
+<!DOCTYPEhtml>
+<html>
+<body>
+<h2>Javascript Variables </h2>
+
+Number 1:  <input type="text" id="n1" name="n1"/>
+<br/> + <br/>
+Number 2:  <input type="text" id="n2" name="n2"/>
+<br/>
+
+<p id="ans"></p>
+<input type="button" value="Add"   onclick="add()"/>
+<input type="button" value="Sub"   onclick="sub()"/>
+<input type="button" value="Mult"   onclick="mult()"/>
+<input type="button" value="Div"   onclick="div()"/>
+
+
+
+
+<script>
+var a, b, result;
+function add()
+{
+               a = parseInt(document.getElementById("n1").value);
+               b = parseInt(document.getElementById("n2").value);
+                  result = a + b;
+                  alert(result);
+}
+function sub()
+{
+               a = parseInt(document.getElementById("n1").value);
+               b = parseInt(document.getElementById("n2").value);
+                  result = a - b;
+                  alert(result);
+}
+function mult()
+{
+               a = parseInt(document.getElementById("n1").value);
+               b = parseInt(document.getElementById("n2").value);
+                  result = a * b;
+                  alert(result);
+}
+function div()
+{
+               a = parseInt(document.getElementById("n1").value);
+               b = parseInt(document.getElementById("n2").value);
+                  result = a / b;
+                  alert(result);
+}
+</script>
+</body>
+</html>
